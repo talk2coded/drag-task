@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <link href="index.css" rel="stylesheet">
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+        <div class="container">
+
+                <div id="beforeDrag">
+
+                        <svg width="300" height="250" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 250"
+                                style="background-image: url('./assets/banner-bg.png')" xml:space="preserve">
+
+                                <g id="title">
+                                        <image xlink:href="./assets/before-text.png" class="before-title" />
+                                </g>
+
+                                <g id="beforeMap" class="beforeMap">
+                                        <image href="./assets/before-map.png" />
+                                </g>
+
+                                <g id="firstIcon" style="transform:translate(50px, 209px)">
+                                        <image class="icons" xlink:href="./assets/icon1.png" />
+                                </g>
+
+                                <g id="secondIcon" style="transform:translate(100px, 209px)">
+                                        <image class="icons" xlink:href="./assets/icon2.png" />
+                                </g>
+
+                                <g id="thirdIcon" style="transform:translate(150px, 209px)">
+                                        <image class="icons" xlink:href="./assets/icon3.png" />
+                                </g>
+
+                                <g id="fourthIcon" style="transform:translate(200px, 209px)">
+                                        <image class="icons" xlink:href="./assets/icon4.png" />
+                                </g>
+
+                        </svg>
+                        <div id="move-here"></div>
+                </div>
+
+                <div id="afterDrag">
+                        <svg width="300" height="250" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 250"
+                                style="background-image: url('./assets/after-main-bg.png')" xml:space="preserve">
+
+                                <image href="./assets/after-map.png" id="afterMap" class="afterMap" />
+
+                                <g id="afterTitle" class="after-title">
+                                        <image xlink:href="./assets/after-text.png" />
+                                </g>
+
+                        </svg>
+                </div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/Draggable.min.js"></script>
+        <script src="./index.js"></script>
+</body>
+
+</html>

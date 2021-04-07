@@ -1,0 +1,75 @@
+body {
+        background-color: #333;
+        width: 300px;
+        height: 250px;
+        margin: auto;
+   }
+
+   .container {
+       width: 300px;
+       height: 250px;
+   }
+
+   .beforeMap, .afterMap {
+       width: 100%;
+   }
+
+
+   #afterDrag {
+     display: none;
+   }
+
+
+   #bagTest {
+     position: absolute;
+     top: 0;
+     left: 15;
+     width: 200px;
+     height: 200px;
+   }
+
+   .success-drag-msg {
+       font-size: 12px;
+
+   }
+
+   #title {
+     z-index: 999999;
+   }
+
+   #successMsg {
+    fill: #fff;
+    stroke: #fff;
+    opacity: 0;
+   }
+   
+   svg {
+    margin:20px auto;
+  }
+
+  
+@-webkit-keyframes move-here {  
+    from { left: 100px; }
+    to { left: 120px; }
+  }
+
+#beforeMap, #afterMap {
+    animation: pulse 1.7s ease alternate infinite;
+
+}
+.before-title{
+  animation: backInDown 0.5s;
+}
+
+.after-title{
+  animation: pulse 2s ease alternate infinite;
+}
+
+@keyframes mapMove {
+  75% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
